@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./color_game.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start">
+            <select id="select">
+                <option class="option" value="1">1 minute</option>
+                <option class="option" value="3">3 minutes</option>
+                <option class="option" value="5">5 minutes</option>
+            </select>
+            <button id="btn_start">Start</button>
+        </div>
+
+        <div id="color_game">
+            <p id="color_code">RGB()</p>
+            <p class="score">Score: <span id="score"> 0</span></p>
+            <div class="box_row">
+                <div id="box1" class="boxes"></div>
+                <div id="box2" class="boxes"></div>
+                <div id="box3" class="boxes"></div>
+            </div>
+
+            <div class="box_row">
+                <div id="box1" class="boxes"></div>
+                <div id="box2" class="boxes"></div>
+                <div id="box3" class="boxes"></div>
+            </div>
+
+        </div>
+
+        <div id="success">SUCCESS</div>
+        <div id="fail">FAIL</div>
+        <div id="end">
+<p class="end">End!</p>
+<p class="end">Result:<span id="result"></span></p>
+<p class="end">Selected time: <span id="minute"> </span><span> minute(s)</span></p>
+<button id="play_again_btn">Play again</button>
+        </div>
+
+    </div>
+
+
+    <script src="./jQuery.js"></script>
+   <script src="./color_game.js"></script> 
+</body>
+</html>
